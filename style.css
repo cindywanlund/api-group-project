@@ -2,29 +2,45 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 ul {
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  height: 40px;
+  position: relative;
 }
 
 li {
-  display: inline;
+  position: absolute;
 }
 
-.topnav {
+li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/*.topnav {
   background-color: rgba(8, 7, 88, 1);
   color: white;
   height: 60px;
+}*/
+
+.topnav span {
+  letter-spacing: 1.5px;
+  font-weight: bold;
 }
 
 .subnav {
-  background-color: rgba(30, 159, 187, 1);
+  background-color: rgba(30, 182, 187, 1);
   color: white;
   height: 40px;
+  border-radius: 8px;
+  margin: 8px;
 }
 
 .searchbar {
@@ -32,4 +48,167 @@ li {
   height: 30px;
   border-radius: 20px;
   border: none;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgba(8, 7, 88, 1);
+  color: white;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  margin-bottom: 10px;
+}
+
+.topnav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/*.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}*/
+
+.topnav .search-container {
+  border-radius: 0;
+  position: relative;
+  height: 60px;
+}
+
+.topnav input[type="text"] {
+  padding: 0 40px;
+  margin-top: 10px;
+  font-size: 17px;
+  border: none;
+  /*border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;*/
+  border-radius: 50px;
+  width: 600px;
+  height: 40px;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 15px;
+  margin-right: 10px;
+  background: rgba(3, 101, 122, 1);
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  position: absolute;
+  right: 0;
+  color: white;
+}
+
+.topnav .search-container i {
+  color: black;
+  position: absolute;
+  margin-top: 15px;
+  font-size: 20px;
+  padding: 6px 10px;
+  margin-left: 3px;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+.cart-button {
+  background-color: rgba(3, 101, 122, 1);
+  border: none;
+  color: white;
+  width: 170px;
+  height: 35px;
+  border-radius: 50px;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+
+.fa-cart-shopping {
+  padding-right: 10px;
+}
+
+footer {
+  background-color: rgba(3, 101, 122, 1);
+  height: 200px;
+  color: white;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.contact-button {
+  background-color: rgba(8, 7, 88, 1);
+  border: none;
+  color: white;
+  width: 170px;
+  height: 35px;
+  border-radius: 50px;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+
+footer i {
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.superpris-button {
+  height: 50px;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: rgba(3, 101, 122, 1);
+  border: none;
+  border-radius: 8px;
+  margin: 10px;
+  color: white;
+}
+
+.superpris-products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.superpris-product {
+  height: 330px;
+  width: 230px;
+  margin: 10px;
+  padding: 23px;
+  line-height: 35px;
+  border: 2px solid rgba(3, 101, 122, 1);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.superpris-product img {
+  height: 150px;
+  width: 180px;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.superpris-product h1 {
+  font-size: 25px;
+}
+
+.superpris-product h2 {
+  font-size: 22px;
+  color: red;
+}
+
+.superpris-product h3 {
+  font-size: 18px;
+  text-decoration: line-through;
 }
