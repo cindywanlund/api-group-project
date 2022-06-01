@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration & Login </title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/eb06b15c02.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+  <div class="nav">
+    <div class="topnav">
+      <span>
+        <a href="#home">SimpleFood</a>
+      </span>
+      <div class="search-container">
+        <form action="/action_page.php">
+          <i class="fa fa-search"></i>
+          <input
+            type="text"
+            placeholder="Sök bland våra produkter..."
+            name="search"
+          />
+          <button class="search-button" type="submit">Sök</button>
+        </form>
+      </div>
+      <button class="cart-button">
+        <i class="fa-solid fa-cart-shopping"></i>Varukorg
+      </button>
+    </div>
+    <div class="subnav">
+      <ul>
+        <li style="left: 30px" class="active"><a href="./index.html">Hem</a></li>
+        <li style="left: 80px"><a href="#">Kategorier</a></li>
+        <div class="sub-menu">
+          <ul>
+            <li><a href="#">GRÖNSAKER</a></li>
+            <li><a href="#">FRUKTER</a></li>
+            <li><a href="#">KÖTT</a></li>
+          </ul>
+        </div>
+        <li style="right: 50px"><a href="/Users/Daniel%20Hällgren/api-group-project/Login.html">Logga in</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="form-body">
+    <div class="container">
+      <div class="forms">
+        <div class="form login">
+          <span class="title">Välkommen tillbaka</span>
+          <form action="#">
+            <div class="input-field">
+              <input type="text" placeholder="Email" required>
+              <i class="fa-solid fa-envelope icon"></i>               
+            </div>
+            <div class="input-field">
+              <input type="password" class="password" placeholder="Lösenord" required>
+              <i class="fa-solid fa-key icon"></i>   
+              <i class="fa-solid fa-eye-slash showHidePw"></i>            
+            </div>
+            <div class="checkbox-text">
+              <div class="checkbox-content">
+                <input type="checkbox" id="logCheck" >
+                <label for="logCheck" class="text">Kom ihåg mig</label>
+              </div>
+              <a href="#" class="text">Glöm lösenord?</a>
+            </div>
+            <div class="input-field button">
+              <input type="buttton" value="Lagga In">
+            </div>
+          </form>
+          <div class="login-signup">
+            <span class="text">Inte en medlem?
+                <a href="#" class="text signup-link">Signup Now</a>
+            </span>
+          </div>
+        </div>
+        <!--Registration Form-->
+        <div class="form signup" >
+          <span class="title">Registration</span>
+          <form action="#">
+            <div class="input-field">
+              <input type="text" placeholder="Namn" required>
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="input-field">
+              <input type="text" placeholder="Email" required>
+              <i class="fa-solid fa-envelope icon"></i>  
+            </div>
+            <div class="input-field">
+              <input type="password" class="password" placeholder="Lösenord" required>
+              <i class="fa-solid fa-key icon"></i>              
+            </div>
+            <div class="input-field">
+              <input type="password" class="password" placeholder=" Bekräfta Lösenord" required>
+              <i class="fa-solid fa-key icon"></i>   
+              <i class="fa-solid fa-eye-slash showHidePw"></i>            
+            </div>
+            <div class="checkbox-text">
+              <div class="checkbox-content">
+                <input type="checkbox" id="sigCheck">
+                <label for="sigCheck" class="text">Jag accepterar alla villkor</label>
+              </div>
+            </div>
+            <div class="input-field button">
+              <input type="button" value="Registrera Nu">
+            </div>
+          </form>
+          <div class="login-signup">
+            <span class="text">Already have an account?
+                <a href="#" class="text login-link">Login Now</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+        <footer>
+          <section>
+            <p style="margin-bottom: 15px">
+              Vi är ett företag som fokuserar på att ge våra kunder färska och
+              ekologiska frukter och grönsaker till super priset.
+            </p>
+            <p>
+              Att kunderna är nöjda är vår drivkraft och vi strävar alltid för att
+              utöka vårt sortiment med fler ekologiska produkter för allas
+              välmående.
+            </p>
+          </section>
+          <section class="icons-footer" style="text-align: center">
+            <i class="fa-brands fa-facebook"></i>
+            <br />
+            <i class="fa-brands fa-instagram-square"></i>
+            <i class="fa-brands fa-twitter-square"></i>
+          </section>
+          <section class="payment" style="text-align: center">
+            <i class="fa-brands fa-apple-pay"></i>
+            <i class="fa-brands fa-cc-visa"></i>
+            <br />
+            <button class="contact-button">Kontakta oss</button>
+          </section>
+        </footer>
+      </div>
+      <script src="script.js"></script>  
+</body>
+</html>
